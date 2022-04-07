@@ -24,7 +24,8 @@ contract Raffle {
         // If this function fails, the string provided by the second argument is sent back to the user, and the transactions are reverted. 
         
         require(msg.value >= 1 ether, "Pay 1 Ether or more to enter the raffle");
-        // This pushes the address of the person who made the transaction to enter to the entries array
+       
+       // This pushes the address of the person who made the transaction to enter to the entries array
         
         entries.push(msg.sender);
         
